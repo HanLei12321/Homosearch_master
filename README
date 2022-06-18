@@ -1,0 +1,37 @@
+###########################################################
+#
+#   Program name: Homosearch_master
+#         Author: Ruobing Han
+#        version: v1.0 (First version)
+#           Date: 2022.6.10
+#
+#
+###########################################################
+
+1. Function introduction:
+   Homosearch is a process used to identify alleles in haplotype-resolved genome. Blastn is used to perform multiple sequence alignment for the two haplotype genomes by using one of the haplotypes as the reference genome.Followed by identification of whether they are located on homologous chromosomes. 
+
+2. Input and output:
+   This process adds two software paths to the profile's PATH. You can download these software in advance: PYTHON, R.
+   The program requires two input genomes (Haplotype 1 and Haplotype 2) and their annotation files (gff, cds, and pep).
+
+3.Statement:
+   This is the first version of the process we released.  It has been verified on a mammalian  genome (approximately 2.7Gb) ###stat suit all genomes###.
+
+4.Usage:
+   The process is divided into 3 steps. You can run it like this:
+Step0:
+   vi profile             ##adding input information to profile.
+
+Step1(Deal input files):
+   bash STEP01_input.sh
+
+Step2(Identify alleles)
+  bash STEP01_Homologous.sh  
+
+Step3(Information statistics)
+ bash  STEP02_statistics.sh 
+
+
+
+
